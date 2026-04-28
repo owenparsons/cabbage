@@ -1,4 +1,4 @@
-# chouchou
+# cabbage
 
 Tiny CLI for quick LLM queries from the terminal.
 
@@ -22,7 +22,7 @@ pipx install -e .
 ## Usage
 
 ```bash
-chouchou what is the command to find all .py files recursively
-chouchou explain the difference between rebase and merge
-chouchou how do I undo the last git commit
+cabbage what is the command to find all .py files recursively
+cabbage explain the difference between rebase and merge
+cabbage how do I undo the last git commit
 ```

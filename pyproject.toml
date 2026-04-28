@@ -3,10 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "chouchou"
+name = "cabbage"
 version = "0.1.0"
 description = "Tiny CLI for quick LLM queries from the terminal"
 requires-python = ">=3.8"
 
 [project.scripts]
-chouchou = "chouchou.cli:main"
+cabbage = "cabbage.cli:main"
