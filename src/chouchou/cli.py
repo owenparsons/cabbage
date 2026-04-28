@@ -10,8 +10,8 @@ SYSTEM_PROMPT = (
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: chouchou <question>")
-        print("Example: chouchou how do I find all .py files recursively")
+        print('Usage: chouchou "your question here"')
+        print('Example: chouchou "how do I find all .py files recursively?"')
         sys.exit(1)
 
     prompt = " ".join(sys.argv[1:])
