@@ -1,6 +1,13 @@
 # cabbage
 
-Tiny CLI for quick LLM queries from the terminal.
+Quick LLM answers from your terminal.
+
+```
+$ cabbage "how do I find all .py files recursively?"
+find . -name "*.py"
+```
+
+Avoids needing to spin up Claude Code or open a browser session just for a simple one-line query. Just ask a question and get an answer.
 
 ## Prerequisites
 
@@ -13,16 +20,16 @@ Tiny CLI for quick LLM queries from the terminal.
 pipx install .
 ```
 
-For development:
-
-```bash
-pipx install -e .
-```
-
 ## Usage
 
 ```bash
-cabbage what is the command to find all .py files recursively
-cabbage explain the difference between rebase and merge
-cabbage how do I undo the last git commit
+cabbage "how do I undo the last git commit?"
+cabbage "explain the difference between rebase and merge"
+cabbage "regex to match email addresses"
 ```
+
+Wrap your question in quotes to avoid shell interpretation of special characters like `?` and `*`.
+
+## Why "cabbage"?
+
+This tool is a small, simple wrapper around [Claude](https://claude.ai), so you could think of it as Claude's child. The most famous Claude that comes to my mind when I think of the name is the composer [Claude Debussy](https://en.wikipedia.org/wiki/Claude_Debussy), whose [daughter was affectionately nicknamed *Chouchou*]((https://interlude.hk/claude-emma-debussy-the-story-of-debussys-doomed-daughter/)) (a French term of endearment that translates loosely to "little cabbage"). Hence, cabbage.
